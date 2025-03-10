@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900">
-  
+    
       <motion.div
         className="absolute inset-0 z-0"
         animate={{
@@ -33,7 +33,7 @@ function Home() {
           Connecting People Across Faiths & Interests
         </motion.h1>
 
-        {/* Brief Description */}
+      
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ function Home() {
           CommunionHub is a revolutionary platform that unites people of all faiths through vibrant events, community support, and shared experiences. Join us to explore, connect, and make a difference.
         </motion.p>
 
-       
+        {/* Call-to-Action Button */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -60,16 +60,34 @@ function Home() {
         </motion.div>
       </motion.div>
 
-    
-      <motion.div
-        className="absolute bottom-10 left-10 w-24 h-24 bg-indigo-500 rounded-full opacity-20"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      {/* Floating Images with Advanced Design */}
+      <motion.img
+        src="/celebrate1.jpg"
+        alt="Celebration 1"
+        className="absolute bottom-10 left-10 w-48 h-48 object-cover rounded-xl shadow-2xl glass-image border border-gray-200 border-opacity-20"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: [0, -30, 0] }}
+        whileHover={{ scale: 1.1, rotate: 5, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)" }}
+        transition={{
+          opacity: { duration: 0.5, delay: 0.2 },
+          y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+          scale: { duration: 0.3 },
+          rotate: { duration: 0.3 },
+        }}
       />
-      <motion.div
-        className="absolute top-20 right-20 w-32 h-32 bg-pink-500 rounded-full opacity-20"
-        animate={{ y: [0, 20, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+      <motion.img
+        src="/celebrate2.jpg"
+        alt="Celebration 2"
+        className="absolute top-20 right-20 w-48 h-48 object-cover rounded-xl shadow-2xl glass-image border border-gray-200 border-opacity-20"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: [0, 30, 0] }}
+        whileHover={{ scale: 1.1, rotate: -5, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)" }}
+        transition={{
+          opacity: { duration: 0.5, delay: 0.4 },
+          y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+          scale: { duration: 0.3 },
+          rotate: { duration: 0.3 },
+        }}
       />
     </div>
   );

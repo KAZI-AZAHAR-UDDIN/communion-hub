@@ -3,7 +3,7 @@
 ## 🌍 About This Project
 CommunionHub is a **modern React web application** designed to showcase and manage events efficiently. The app features a **Home Page** introducing the platform and an **Event Listing Page** where users can explore, filter, and add events seamlessly. With **smooth animations**, a **responsive design**, and a **modern UI**, this app provides an intuitive user experience.
 
-🔗 **Live Demo**: [CommunionHub](https://communion-hub-nine.vercel.app/)  
+🔗 **Live Demo**: [CommunionHub](https://communion-hub-seven.vercel.app)  
 📝 **GitHub Repository**: [CommunionHub Repo](https://github.com/KAZI-AZAHAR-UDDIN/communion-hub)
 
 ---
